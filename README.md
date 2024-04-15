@@ -10,7 +10,11 @@ This package provides a node.js library, cli and docker compose setup to for usi
   - support [docker compose](https://docs.docker.com/compose/)
 
 #### Setup & Installation
-Docker version can be run without setup. For CLI & library run `npm install`. After this you can either run the CLI with `node </path/to/nyt-dlp>` or install the binary globally with `npm i -g`.
+Install the package with `npm i <git-release>` for CLI & library use. For Docker version you need to clone the repository. For example:
+```bash
+npm i https://github.com/relicode/nyt-dlp/archive/refs/tags/0.0.2.tar.gz
+git clone https://github.com/relicode/nyt-dlp
+```
 
 ## Usage:
 The CLI and docker compose (that runs the CLI underneath) both accept command line parameters that get passed directly to `yt-dlp`.

@@ -1,12 +1,18 @@
 {
   "name": "nyt-dlp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
-  "description": "",
+  "description": "node.js library, cli and docker compose setup to for using yt-dlp",
   "main": "nyt-dlp.js",
   "bin": "cli.js",
-  "keywords": [],
-  "author": "",
+  "files": ["*.js"],
+  "keywords": [
+    "yt-dlp",
+    "cli",
+    "download",
+    "multimedia"
+  ],
+  "author": "Anssi Siren <pro@avaruus.mozmail.com>",
   "license": "BSD-3",
   "scripts": {
     "start": "node server.js",
@@ -14,6 +20,6 @@
     "posttest": "rm -r /tmp/nyt-dlp-test"
   },
   "dependencies": {
-    "chalk": "^5.3.0"
+    "chalk": "5.3.0"
   }
 }
