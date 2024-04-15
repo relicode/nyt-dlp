@@ -1,0 +1,19 @@
+{
+  "name": "nyt-dlp",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "",
+  "main": "nyt-dlp.js",
+  "bin": "cli.js",
+  "keywords": [],
+  "author": "",
+  "license": "BSD-3",
+  "scripts": {
+    "start": "node server.js",
+    "test": "DOWNLOAD_DIR=/tmp/nyt-dlp-test test/cli.js 'https://www.youtube.com/watch?v=zGDzdps75ns' && [ -f '/tmp/nyt-dlp-test/Small_short_test_video.webm' ]",
+    "posttest": "rm -r /tmp/nyt-dlp-test"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
+}

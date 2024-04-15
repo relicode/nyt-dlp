@@ -1,0 +1,11 @@
+# CLI: docker compose run nytdlp nyt-dlp 'https://www.youtube.com/watch?v=zGDzdps75ns'
+
+services:
+  nytdlp:
+    image: relicode/nytdlp:latest
+    build: .
+    environment:
+      DOWNLOAD_DIR: ./downloads
+    volumes:
+      - ./downloads:/home/node/downloads
+
